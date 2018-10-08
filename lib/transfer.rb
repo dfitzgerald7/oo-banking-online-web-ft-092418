@@ -14,9 +14,12 @@ class Transfer
   end 
   
   def execute_transaction 
-    sender.balance -= amount 
-    receiver.balance += amount
-    self.status = "complete"
+    unless @@all.include?(self)
+      sender.balance -= amount 
+      receiver.balance += amount
+      self.status = "complete"
+      @@all << self
+    end 
   end 
   
 end
