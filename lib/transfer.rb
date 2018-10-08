@@ -22,8 +22,7 @@ class Transfer
       self.status = "complete"
       @@all << self
     else 
-      
-    
+      "Transaction rejected. Please check your account balance."
     end 
     
   end 
