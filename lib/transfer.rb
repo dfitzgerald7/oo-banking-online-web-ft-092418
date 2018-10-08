@@ -30,8 +30,8 @@ class Transfer
   
   def reverse_transfer 
     if @@all.include?(self)
-      self.sender += self.amount
-      self.receiver -= self.amount
+      self.sender.balance += self.amount
+      self.receiver.balance -= self.amount
     end 
   end 
   
