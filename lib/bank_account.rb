@@ -6,4 +6,8 @@ class BankAccount
     self.name = name 
     self.balance = balance
   end 
+  
+  def status 
+    self.balance
+  end 
 end
