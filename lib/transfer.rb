@@ -21,7 +21,11 @@ class Transfer
       receiver.balance += amount
       self.status = "complete"
       @@all << self
+    else 
+      
+    
     end 
+    
   end 
   
 end
