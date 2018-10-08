@@ -26,7 +26,7 @@ class BankAccount
   end 
   
   def close_account 
-    self.valid = "closed "
+    self.valid = "closed"
   end 
   
 end
