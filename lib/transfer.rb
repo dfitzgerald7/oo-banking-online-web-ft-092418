@@ -19,8 +19,9 @@ class Transfer
     if !@@all.include?(self) && self.valid?
       sender.balance -= amount 
       receiver.balance += amount
-      self.status = "complete"
       @@all << self
+      self.status = "complete"
+      
     else 
       "Transaction rejected. Please check your account balance."
       self.status = "rejected"
