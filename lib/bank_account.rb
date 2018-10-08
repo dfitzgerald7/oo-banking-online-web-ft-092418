@@ -9,8 +9,8 @@ class BankAccount
     self.status = status
   end 
   
-  def deposit 
-    
+  def deposit(money) 
+    self.balance += money
   end 
   
 end
